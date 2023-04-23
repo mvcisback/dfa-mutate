@@ -19,7 +19,8 @@ __all__ = [
 
 
 def generate_mutations(orig: DFA, rng=random) -> Iterable[DFA]:
-    yield from (f(orig, rng) for f in cycle(MUTATIONS))
+    dfas = (f(orig, rng) for f in cycle(MUTATIONS))
+    yield from filter(lambda d: d is not None, dfas)
 
 
 def sample_mutation(orig: DFA, n=20, score=fn.constantly(1.0), rng=random) -> DFA:
