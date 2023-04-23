@@ -6,6 +6,7 @@ authors = ["Marcell Vazquez-Chanlatte <mvc@linux.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "dfa_mutate", from = "src"}]
+repository = "https://github.com/mvcisback/dfa-mutate"
 
 [tool.poetry.dependencies]
 python = "^3.10"
