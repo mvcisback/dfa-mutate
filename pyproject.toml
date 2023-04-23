@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dfa-mutate"
-version = "0.1.0"
+version = "0.1.1"
 description = "Library for mutating a DFA represented using the dfa library."
 authors = ["Marcell Vazquez-Chanlatte <mvc@linux.com>"]
 license = "MIT"
